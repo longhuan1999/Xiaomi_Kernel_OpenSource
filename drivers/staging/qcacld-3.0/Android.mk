@@ -21,6 +21,8 @@ ifneq ($(findstring vendor,$(LOCAL_PATH)),)
 
 ifneq ($(findstring opensource,$(LOCAL_PATH)),)
 	WLAN_BLD_DIR := vendor/qcom/opensource/wlan
+else
+	WLAN_BLD_DIR := drivers/staging
 endif # opensource
 
 # DLKM_DIR was moved for JELLY_BEAN (PLATFORM_SDK 16)
